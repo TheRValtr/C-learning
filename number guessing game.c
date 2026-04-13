@@ -32,7 +32,7 @@ int main() {
         }
     }
 
-    printf("❌ You lost! The number was %d\n", secret);
+    printf(" You lost! The number was %d\n", secret);
 
     return 0;
 }
