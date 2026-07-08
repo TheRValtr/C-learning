@@ -10,7 +10,7 @@ void saveData(void) {
         return;
     }
 
-    fprintf(file, "Example saved data\n");
+    fprintf(file, "Ex data guardada\n");
 
     fclose(file);
     printf("Data saved.\n");
