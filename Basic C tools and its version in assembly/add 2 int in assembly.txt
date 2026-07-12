@@ -1,0 +1,20 @@
+main:
+    sub     rsp, 40
+
+    mov     edx, 3
+    mov     ecx, 5
+    call    add
+
+    mov     DWORD PTR [rsp+36], eax
+
+    mov     edx, eax
+    lea     rcx, format_string
+    call    printf
+
+    xor     eax, eax
+
+    add     rsp, 40
+    ret
+
+format_string:
+    db "Result: %d", 10, 0
